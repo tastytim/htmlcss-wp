@@ -5,7 +5,7 @@
 }
 
 header {
-  width: 800px;
+  width: 1100px;
   margin: 10px auto;
 }
 
@@ -32,20 +32,20 @@ header .header-logo img {
 }
 
 main {
-  width: 800px;
+  width: 1100px;
   margin: auto;
   position: relative;
 }
 
 footer {
-  width: 800px;
+  width: 1100px;
   margin: 20px auto 10px auto;
   font-size: larger;
   text-align: center;
 }
 
 .hero-block {
-  width: 800px;
+  width: 1100px;
   margin: 15px auto;
   position: relative;
   height: 450px;
@@ -89,14 +89,15 @@ footer {
 
 .second-block-2-col-1 {
   float: left;
-  width: 150px;
+  width: 300px;
   position: relative;
 }
 
 .second-block-2-col-center {
   float: left;
-  width: calc(100% - 150px * 2);
-  padding: 0 10px;
+  width: calc(100% - 300px * 2);
+  position: relative;
+  padding:0 10px;
 }
 
 .clearfix:after {
@@ -105,16 +106,43 @@ footer {
   clear: both;
 }
 
+.second-block-image {
+  position: relative;
+}
 .second-block-image img {
-  width: 100%;
-  height: 200px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   border-radius: 5px;
 }
 
 .icon-heart {
   color: red;
+}
+
+.second-block-image-left {
+  background: url("../img/img-1.jpg");
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.second-block-image-center {
+  background: url("../img/banner-2.jpg");
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.second-block-image-right {
+  background: url("../img/img-3.jpg");
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlayimg:after {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
 }
